@@ -1,0 +1,1005 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta http-equiv="Content-Language" content="en-gb" />
+ <title>App Class - CorsixTH Lua Documentation</title>
+ <link rel="stylesheet" href="main.css" type="text/css" media="all" />
+ </head>
+ <body>
+ <h1>CorsixTH Lua Documentation</h1>
+ <ul class="tabs">
+ <li><a href="#">Documentation Home</a></li>
+ <li class="active"><a href="class_list.html">Classes</a></li>
+ <li><a href="file_hierarchy.html">Files</a></li>
+ <li><a href="#">Miscellaneous</a></li>
+ </ul>
+ <ul class="sections">
+ <li><a href="class_list.html">List</a></li>
+ <li><a href="class_hierarchy.html">Hierarchy</a></li>
+ <li class="last"><a href="class_index.html">Index</a></li>
+ </ul>
+ <div class="content">
+ <h2 class="class">App Class</h2>
+<div class="class_info">
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L33">line 33 of Lua/app.lua</a>.
+</div>
+<div class="method_list">
+ <h4>Method Index</h4>
+ <ul>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1abandon">abandon</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1after_load">afterLoad</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1check_for_updates">checkForUpdates</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1check_install_folder">checkInstallFolder</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1check_missing_strings_in_language">checkMissingStringsInLanguage</a>(<span class="p">dir</span>, <span class="p">language</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1connect_debugger">connectDebugger</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1dispatch">dispatch</a>(<span class="p">evt_type</span>, <span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1draw_frame">drawFrame</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1dump_strings">dumpStrings</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1exit">exit</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1finish_video_update">finishVideoUpdate</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1fix_config">fixConfig</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1get_absolute_path_to_level_file">getAbsolutePathToLevelFile</a>(<span class="p">level</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1get_bitmap_dir">getBitmapDir</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1get_f_p_s">getFPS</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1get_version">getVersion</a>(<span class="p">version</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1init">init</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1init_language">initLanguage</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1init_savegame_dir">initSavegameDir</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1init_screenshots_dir">initScreenshotsDir</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1init_user_level_dir">initUserLevelDir</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1load">load</a>(<span class="p">filepath</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1load_campaign">loadCampaign</a>(<span class="p">campaign_file</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1load_level">loadLevel</a>(<span class="p">level</span>, <span class="p">difficulty</span>, <span class="p">level_name</span>, <span class="p">level_file</span>, <span class="p">level_intro</span>, <span class="p">map_editor</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1load_lua_folder">loadLuaFolder</a>(<span class="p">dir</span>, <span class="p">no_results</span>, <span class="p">append_to</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1load_main_menu">loadMainMenu</a>(<span class="p">message</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1map_edit">mapEdit</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1on_editing_text">onEditingText</a>(<span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1on_key_down">onKeyDown</a>(<span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1on_key_up">onKeyUp</a>(<span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1on_mouse_down">onMouseDown</a>(<span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1on_mouse_move">onMouseMove</a>(<span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1on_mouse_up">onMouseUp</a>(<span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1on_mouse_wheel">onMouseWheel</a>(<span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1on_movie_over">onMovieOver</a>(<span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1on_multi_gesture">onMultiGesture</a>(<span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1on_music_over">onMusicOver</a>(<span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1on_sound_over">onSoundOver</a>(<span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1on_text_input">onTextInput</a>(<span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1on_tick">onTick</a>(<span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1on_window_active">onWindowActive</a>(<span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1on_window_resize">onWindowResize</a>(<span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1prepare_video_update">prepareVideoUpdate</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1quick_load">quickLoad</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1quick_save">quickSave</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1read_bitmap_data_file">readBitmapDataFile</a>(<span class="p">filename</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1read_campaign_file">readCampaignFile</a>(<span class="p">campaign_file</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1read_data_file">readDataFile</a>(<span class="p">dir</span>, <span class="p">filename</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1read_level_file">readLevelFile</a>(<span class="p">level</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1read_map_data_file">readMapDataFile</a>(<span class="p">filename</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1restart">restart</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1run">run</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1save">save</a>(<span class="p">filename</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1save_config">saveConfig</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1set_capture_mouse">setCaptureMouse</a>()
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1set_command_line">setCommandLine</a>(<span class="p">...</span>)
+ </li>
+ <li class="self">
+ <a href="_0_1_app.html#_0_1_app_1world_exited">worldExited</a>()
+ </li>
+ </ul>
+</div>
+<div class="member_list">
+ <h4>Member Index</h4>
+ <ul>
+ <li><span class="p">animation_manager</span>
+ </li>
+ <li><span class="p">anims</span>
+ </li>
+ <li><span class="p">audio</span>
+ </li>
+ <li><span class="p">caption</span>
+ </li>
+ <li><span class="p">check_for_updates</span>
+ </li>
+ <li><span class="p">command_line</span>
+ </li>
+ <li><span class="p">config</span>
+ </li>
+ <li><span class="p">diseases</span>
+ </li>
+ <li><span class="p">eventHandlers</span>
+ </li>
+ <li><span class="p">fs</span>
+ </li>
+ <li><span class="p">fullscreen</span>
+ </li>
+ <li><span class="p">gfx</span>
+ </li>
+ <li><span class="p">good_install_folder</span>
+ </li>
+ <li><span class="p">humanoid_actions</span>
+ </li>
+ <li><span class="p">key_modifiers</span>
+ </li>
+ <li><span class="p">last_dispatch_type</span>
+ </li>
+ <li><span class="p">level_dir</span>
+ </li>
+ <li><span class="p">lua_socket_available</span>
+ </li>
+ <li><span class="p">map</span>
+ </li>
+ <li><span class="p">modes</span>
+ </li>
+ <li><span class="p">moviePlayer</span>
+ </li>
+ <li><span class="p">objects</span>
+ </li>
+ <li><span class="p">resetInfiniteLoopChecker</span>
+ </li>
+ <li><span class="p">rooms</span>
+ </li>
+ <li><span class="p">running</span>
+ </li>
+ <li><span class="p">runtime_config</span>
+ </li>
+ <li><span class="p">savegame_dir</span>
+ </li>
+ <li><span class="p">savegame_version</span>
+ </li>
+ <li><span class="p">screenshot_dir</span>
+ </li>
+ <li><span class="p">strings</span>
+ </li>
+ <li><span class="p">ui</span>
+ </li>
+ <li><span class="p">user_level_dir</span>
+ </li>
+ <li><span class="p">using_demo_files</span>
+ </li>
+ <li><span class="p">video</span>
+ </li>
+ <li><span class="p">walls</span>
+ </li>
+ <li><span class="p">world</span>
+ </li>
+ </ul>
+</div>
+<div class="methods">
+ <div class="method">
+ <h5><a name="_0_1_app_1_app">function App:App()</a></h5>
+ <p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L38">line 38 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1abandon">function App:abandon()</a></h5>
+ <p>
+ Exits the game completly without saving the config i.e. Alt+F4 for Quit Application<br/><br/>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1393">line 1393 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1after_load">function App:afterLoad()</a></h5>
+ <p>
+ This function is automatically called after loading a game and serves for compatibility.<br/><br/>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1398">line 1398 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1check_for_updates">function App:checkForUpdates()</a></h5>
+ <p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1449">line 1449 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1check_install_folder">function App:checkInstallFolder()</a></h5>
+ <p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1109">line 1109 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1check_missing_strings_in_language">function App:checkMissingStringsInLanguage(<span class="p">dir</span>, <span class="p">language</span>)</a></h5>
+ <p>
+ Compares strings provided by language file of given language WITHOUT inheritance
+with strings provided by english language with inheritance (i.e. all strings).
+This will give translators an idea which strings are missing in their translation.<br/><br/>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">dir</td>
+ <td class="t">?</td>
+ <td class="d">The directory where the file to write to should be.</td>
+ </tr>
+ <tr>
+ <td class="n">language</td>
+ <td class="t">?</td>
+ <td class="d">The language to check against.</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L731">line 731 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1connect_debugger">function App:connectDebugger()</a></h5>
+ <p>
+ Starts a Lua DBGp client & connects it to a DBGp server.<br/><br/>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L69">line 69 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1dispatch">function App:dispatch(<span class="p">evt_type</span>, <span class="p">...</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">evt_type</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L996">line 996 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1draw_frame">function App:drawFrame()</a></h5>
+ <p>
+ Used to loop through fps_history when [over]writing<br/><br/>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1024">line 1024 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1dump_strings">function App:dumpStrings()</a></h5>
+ <p>
+ This is a useful debug and development aid<br/><br/>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L647">line 647 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1exit">function App:exit()</a></h5>
+ <p>
+ Exits the game completely (no confirmation window)<br/><br/>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1386">line 1386 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1finish_video_update">function App:finishVideoUpdate()</a></h5>
+ <p>
+ Update / start any resources relying on a video object<br/><br/>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1532">line 1532 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1fix_config">function App:fixConfig()</a></h5>
+ <p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L799">line 799 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1get_absolute_path_to_level_file">function App:getAbsolutePathToLevelFile(<span class="p">level</span>)</a></h5>
+ <p>
+ CorsixTH install directory.<br/><br/>
+ a second variable is returned with an error message.<br/><br/>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">level</td>
+ <td class="t">string</td>
+ <td class="d"> Filename to search for.</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L561">line 561 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1get_bitmap_dir">function App:getBitmapDir()</a></h5>
+ <p>
+ Get the directory containing the bitmap files.<br/><br/>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1185">line 1185 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1get_f_p_s">function App:getFPS()</a></h5>
+ <p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1045">line 1045 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1get_version">function App:getVersion(<span class="p">version</span>)</a></h5>
+ <p>
+ which save game version it is. This was added after the Beta 8<br/><br/>
+ release, which is why the checks prior to that version aren't made.<br/><br/>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">version</td>
+ <td class="t">?</td>
+ <td class="d">An optional value if you want to find what game version
+a specific savegame verion is from.</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1293">line 1293 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1init">function App:init()</a></h5>
+ <p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L85">line 85 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1init_language">function App:initLanguage()</a></h5>
+ <p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L394">line 394 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1init_savegame_dir">function App:initSavegameDir()</a></h5>
+ <p>
+ Tries to initialize the savegame directory, returns true on success and<br/><br/>
+ false on failure.<br/><br/>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L352">line 352 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1init_screenshots_dir">function App:initScreenshotsDir()</a></h5>
+ <p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L374">line 374 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1init_user_level_dir">function App:initUserLevelDir()</a></h5>
+ <p>
+ Tries to initialize the user and built in level directories, returns true on<br/><br/>
+ success and false on failure.<br/><br/>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L330">line 330 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1load">function App:load(<span class="p">filepath</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">filepath</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1337">line 1337 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1load_campaign">function App:loadCampaign(<span class="p">campaign_file</span>)</a></h5>
+ <p>
+ Loads the first level of the specified campaign and prepares the world<br/><br/>
+ to be able to progress through that campaign.<br/><br/>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">campaign_file</td>
+ <td class="t">string</td>
+ <td class="d"> Name of a CorsixTH Campaign definition Lua file.</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L481">line 481 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1load_level">function App:loadLevel(<span class="p">level</span>, <span class="p">difficulty</span>, <span class="p">level_name</span>, <span class="p">level_file</span>, <span class="p">level_intro</span>, <span class="p">map_editor</span>)</a></h5>
+ <p>
+ Loads the specified level. If a string is passed it looks for the file with the same name
+in the "Levels" folder of CorsixTH, if it is a number it tries to load that level from
+the original game.<br/><br/>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">level</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ <tr>
+ <td class="n">difficulty</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ <tr>
+ <td class="n">level_name</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ <tr>
+ <td class="n">level_file</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ <tr>
+ <td class="n">level_intro</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ <tr>
+ <td class="n">map_editor</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L581">line 581 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1load_lua_folder">function App:loadLuaFolder(<span class="p">dir</span>, <span class="p">no_results</span>, <span class="p">append_to</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">dir</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ <tr>
+ <td class="n">no_results</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ <tr>
+ <td class="n">append_to</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1256">line 1256 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1load_main_menu">function App:loadMainMenu(<span class="p">message</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">message</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L448">line 448 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1map_edit">function App:mapEdit()</a></h5>
+ <p>
+ Begin the map editor<br/><br/>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1381">line 1381 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1on_editing_text">function App:onEditingText(<span class="p">...</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1059">line 1059 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1on_key_down">function App:onKeyDown(<span class="p">...</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1051">line 1051 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1on_key_up">function App:onKeyUp(<span class="p">...</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1055">line 1055 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1on_mouse_down">function App:onMouseDown(<span class="p">...</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1071">line 1071 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1on_mouse_move">function App:onMouseMove(<span class="p">...</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1075">line 1075 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1on_mouse_up">function App:onMouseUp(<span class="p">...</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1067">line 1067 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1on_mouse_wheel">function App:onMouseWheel(<span class="p">...</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1079">line 1079 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1on_movie_over">function App:onMovieOver(<span class="p">...</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1097">line 1097 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1on_multi_gesture">function App:onMultiGesture(<span class="p">...</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1105">line 1105 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1on_music_over">function App:onMusicOver(<span class="p">...</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1093">line 1093 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1on_sound_over">function App:onSoundOver(<span class="p">...</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1101">line 1101 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1on_text_input">function App:onTextInput(<span class="p">...</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1063">line 1063 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1on_tick">function App:onTick(<span class="p">...</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1011">line 1011 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1on_window_active">function App:onWindowActive(<span class="p">...</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1083">line 1083 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1on_window_resize">function App:onWindowResize(<span class="p">...</span>)</a></h5>
+ <p>
+ Window has been resized by the user<br/><br/>
+ Call the UI to handle the new window size<br/><br/>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1087">line 1087 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1prepare_video_update">function App:prepareVideoUpdate()</a></h5>
+ <p>
+ Free up / stop any resources relying on the current video object<br/><br/>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1526">line 1526 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1quick_load">function App:quickLoad()</a></h5>
+ <p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1344">line 1344 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1quick_save">function App:quickSave()</a></h5>
+ <p>
+ Omit the usual file extension so this file cannot be seen from the normal load and save screen and cannot be overwritten<br/><br/>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1331">line 1331 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1read_bitmap_data_file">function App:readBitmapDataFile(<span class="p">filename</span>)</a></h5>
+ <p>
+ Load bitmap data into memory.<br/><br/>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">filename</td>
+ <td class="t">?</td>
+ <td class="d">Name of the file to load.</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1192">line 1192 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1read_campaign_file">function App:readCampaignFile(<span class="p">campaign_file</span>)</a></h5>
+ <p>
+ Reads the given file name as a Lua chunk from the Campaigns folder in the CorsixTH install directory.<br/><br/>
+ A correct campaign definition contains "name", "description", "levels", and "winning_text".<br/><br/>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">campaign_file</td>
+ <td class="t">string</td>
+ <td class="d"> Name of the file to read.</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L511">line 511 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1read_data_file">function App:readDataFile(<span class="p">dir</span>, <span class="p">filename</span>)</a></h5>
+ <p>
+ Read a data file of the application into memory (possibly with decompression).<br/><br/>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">dir</td>
+ <td class="t">string</td>
+ <td class="d"> Directory to read from. "Bitmap" and "Levels" are
+meta-directories, and get resolved to real directories in the function.</td>
+ </tr>
+ <tr>
+ <td class="n">filename</td>
+ <td class="t">string&nbsp;or&nbsp;or&nbsp;or&nbsp;nil</td>
+ <td class="d"> If specified, the file to load. If 'nil', the
+'dir' parameter is the filename in the "Data" directory.</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1206">line 1206 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1read_level_file">function App:readLevelFile(<span class="p">level</span>)</a></h5>
+ <p>
+ Opens the given file name and returns all Level definitions in a table.<br/><br/>
+ Values in the returned table: "path", "level_file", "name", "map_file", "briefing", and "end_praise".<br/><br/>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">level</td>
+ <td class="t">string</td>
+ <td class="d"> Name of the file to read.</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L529">line 529 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1read_map_data_file">function App:readMapDataFile(<span class="p">filename</span>)</a></h5>
+ <p>
+ Get a level file.<br/><br/>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">filename</td>
+ <td class="t">string</td>
+ <td class="d"> Name of the level file.</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1227">line 1227 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1restart">function App:restart()</a></h5>
+ <p>
+ Restarts the current level (offers confirmation window first)<br/><br/>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1354">line 1354 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1run">function App:run()</a></h5>
+ <p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L902">line 902 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1save">function App:save(<span class="p">filename</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">filename</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L1327">line 1327 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1save_config">function App:saveConfig()</a></h5>
+ <p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L842">line 842 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1set_capture_mouse">function App:setCaptureMouse()</a></h5>
+ <p>
+ Sets the mouse capture to the state set within<br/><br/>
+ app.config.capture_mouse<br/><br/>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L475">line 475 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1set_command_line">function App:setCommandLine(<span class="p">...</span>)</a></h5>
+ <p>
+ <strong>Parameters:</strong>
+ <table class="params">
+ <tr><th class="n">Name</th><th class="t">Type</th><th>Description</th>
+ <tr>
+ <td class="n">...</td>
+ <td class="t">?</td>
+ <td class="d">?</td>
+ </tr>
+ </table></p><p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L75">line 75 of Lua/app.lua</a>.
+ </p>
+ </div>
+ <div class="method">
+ <h5><a name="_0_1_app_1world_exited">function App:worldExited()</a></h5>
+ <p>
+ <strong>Declared on:</strong> <a href="http://www.github.com/CorsixTH/CorsixTH/blob/master/CorsixTH/Lua/app.lua#L444">line 444 of Lua/app.lua</a>.
+ </p>
+ </div>
+</div>
+ </div>
+ <span class="footer">Page generated on Wed Feb 07, 2018 at 21:09:16 by LDocGen.</span>
+ </body>
+</html>
