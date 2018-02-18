@@ -147,16 +147,21 @@ Enumerations</h2></td></tr>
 <a class="el" href="th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1aab169d6caa9f02317331ade1ed92924e8">MT_StringProxy</a>, 
 <br/>
 &#160;&#160;<a class="el" href="th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1aa86436df0e96b73de2f3fad31544200eb">MT_Line</a>, 
-<a class="el" href="th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1aa232e533c1cc30125fc77cb8341809a42">MT_Count</a>, 
-<a class="el" href="th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1aaaebf7ac17f18838fae77243be6b4cdf9">MT_DummyString</a>
+<a class="el" href="th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1aa232e533c1cc30125fc77cb8341809a42">MT_Count</a>
 <br/>
  }</td></tr>
 <tr class="separator:adeff670b4ddb98a410a124e22ae53a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1b6708e9705fc98ee11aa8d8d17f0c3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="th__lua__internal_8h.html#a1b6708e9705fc98ee11aa8d8d17f0c3f">luaT_setclosure</a> (const <a class="el" href="structTHLuaRegisterState__t.html">THLuaRegisterState_t</a> *pState, lua_CFunction fn, <a class="el" href="th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1a">eTHLuaMetatable</a> eMetatable1,...)</td></tr>
-<tr class="separator:a1b6708e9705fc98ee11aa8d8d17f0c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad477429a8a30410be522af738dcd03fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="th__lua__internal_8h.html#ad477429a8a30410be522af738dcd03fd">luaT_setclosure</a> (const <a class="el" href="structTHLuaRegisterState__t.html">THLuaRegisterState_t</a> *pState, lua_CFunction fn, size_t iUps)</td></tr>
+<tr class="separator:ad477429a8a30410be522af738dcd03fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3538d6d409451c85d5d1d3e0ff90a5b"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:ae3538d6d409451c85d5d1d3e0ff90a5b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="th__lua__internal_8h.html#ae3538d6d409451c85d5d1d3e0ff90a5b">luaT_setclosure</a> (const <a class="el" href="structTHLuaRegisterState__t.html">THLuaRegisterState_t</a> *pState, lua_CFunction fn, size_t iUps, <a class="el" href="th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1a">eTHLuaMetatable</a> eMetatable1, Args...args)</td></tr>
+<tr class="separator:ae3538d6d409451c85d5d1d3e0ff90a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7009ac865e657079c97452b0fbb7aa29"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a7009ac865e657079c97452b0fbb7aa29"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="th__lua__internal_8h.html#a7009ac865e657079c97452b0fbb7aa29">luaT_setclosure</a> (const <a class="el" href="structTHLuaRegisterState__t.html">THLuaRegisterState_t</a> *pState, lua_CFunction fn, size_t iUps, const char *str, Args...args)</td></tr>
+<tr class="separator:a7009ac865e657079c97452b0fbb7aa29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="abca657fc03add6265c7106b2bf69306b"></a>
@@ -264,7 +269,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="th__lua_8cpp.html#a8f3a7b4e843ae50b9b976580eead2096">luaT_push</a>(pState-&gt;L, value); \</div>
 <div class="line">    lua_setfield(pState-&gt;L, -2, name)</div>
-<div class="ttc" id="th__lua_8cpp_html_a8f3a7b4e843ae50b9b976580eead2096"><div class="ttname"><a href="th__lua_8cpp.html#a8f3a7b4e843ae50b9b976580eead2096">luaT_push</a></div><div class="ttdeci">void luaT_push(lua_State *L, lua_CFunction f)</div><div class="ttdef"><b>Definition:</b> th_lua.cpp:352</div></div>
+<div class="ttc" id="th__lua_8cpp_html_a8f3a7b4e843ae50b9b976580eead2096"><div class="ttname"><a href="th__lua_8cpp.html#a8f3a7b4e843ae50b9b976580eead2096">luaT_push</a></div><div class="ttdeci">void luaT_push(lua_State *L, lua_CFunction f)</div><div class="ttdef"><b>Definition:</b> th_lua.cpp:337</div></div>
 </div><!-- fragment --><p>Add a named constant to the lua interface. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -305,10 +310,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="th__lua__internal_8h.html#a1b6708e9705fc98ee11aa8d8d17f0c3f">luaT_setclosure</a>(pState, fn, ## __VA_ARGS__, <a class="code" href="th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1aa232e533c1cc30125fc77cb8341809a42">MT_Count</a>); \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="th__lua__internal_8h.html#ad477429a8a30410be522af738dcd03fd">luaT_setclosure</a>(pState, fn, 0, ## __VA_ARGS__); \</div>
 <div class="line">    lua_setfield(pState-&gt;L, -2, name)</div>
-<div class="ttc" id="th__lua__internal_8h_html_a1b6708e9705fc98ee11aa8d8d17f0c3f"><div class="ttname"><a href="th__lua__internal_8h.html#a1b6708e9705fc98ee11aa8d8d17f0c3f">luaT_setclosure</a></div><div class="ttdeci">void luaT_setclosure(const THLuaRegisterState_t *pState, lua_CFunction fn, eTHLuaMetatable eMetatable1,...)</div><div class="ttdef"><b>Definition:</b> th_lua.cpp:247</div></div>
-<div class="ttc" id="th__lua__internal_8h_html_adeff670b4ddb98a410a124e22ae53a1aa232e533c1cc30125fc77cb8341809a42"><div class="ttname"><a href="th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1aa232e533c1cc30125fc77cb8341809a42">MT_Count</a></div><div class="ttdef"><b>Definition:</b> th_lua_internal.h:55</div></div>
+<div class="ttc" id="th__lua__internal_8h_html_ad477429a8a30410be522af738dcd03fd"><div class="ttname"><a href="th__lua__internal_8h.html#ad477429a8a30410be522af738dcd03fd">luaT_setclosure</a></div><div class="ttdeci">void luaT_setclosure(const THLuaRegisterState_t *pState, lua_CFunction fn, size_t iUps)</div><div class="ttdef"><b>Definition:</b> th_lua.cpp:247</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -341,10 +345,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="th__lua__internal_8h.html#a1b6708e9705fc98ee11aa8d8d17f0c3f">luaT_setclosure</a>(pState, fn, ## __VA_ARGS__, <a class="code" href="th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1aa232e533c1cc30125fc77cb8341809a42">MT_Count</a>); \</div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="th__lua__internal_8h.html#ad477429a8a30410be522af738dcd03fd">luaT_setclosure</a>(pState, fn, 0, ## __VA_ARGS__); \</div>
 <div class="line">    lua_setfield(pState-&gt;L, iCurrentClassMT, <span class="stringliteral">&quot;__&quot;</span> name)</div>
-<div class="ttc" id="th__lua__internal_8h_html_a1b6708e9705fc98ee11aa8d8d17f0c3f"><div class="ttname"><a href="th__lua__internal_8h.html#a1b6708e9705fc98ee11aa8d8d17f0c3f">luaT_setclosure</a></div><div class="ttdeci">void luaT_setclosure(const THLuaRegisterState_t *pState, lua_CFunction fn, eTHLuaMetatable eMetatable1,...)</div><div class="ttdef"><b>Definition:</b> th_lua.cpp:247</div></div>
-<div class="ttc" id="th__lua__internal_8h_html_adeff670b4ddb98a410a124e22ae53a1aa232e533c1cc30125fc77cb8341809a42"><div class="ttname"><a href="th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1aa232e533c1cc30125fc77cb8341809a42">MT_Count</a></div><div class="ttdef"><b>Definition:</b> th_lua_internal.h:55</div></div>
+<div class="ttc" id="th__lua__internal_8h_html_ad477429a8a30410be522af738dcd03fd"><div class="ttname"><a href="th__lua__internal_8h.html#ad477429a8a30410be522af738dcd03fd">luaT_setclosure</a></div><div class="ttdeci">void luaT_setclosure(const THLuaRegisterState_t *pState, lua_CFunction fn, size_t iUps)</div><div class="ttdef"><b>Definition:</b> th_lua.cpp:247</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -427,14 +430,12 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="adeff670b4ddb98a410a124e22ae53a1aa232e533c1cc30125fc77cb8341809a42"></a>MT_Count</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="adeff670b4ddb98a410a124e22ae53a1aaaebf7ac17f18838fae77243be6b4cdf9"></a>MT_DummyString</em>&#160;</td><td class="fielddoc">
-</td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a1b6708e9705fc98ee11aa8d8d17f0c3f"></a>
+<a class="anchor" id="ad477429a8a30410be522af738dcd03fd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -453,14 +454,100 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iUps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae3538d6d409451c85d5d1d3e0ff90a5b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void luaT_setclosure </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structTHLuaRegisterState__t.html">THLuaRegisterState_t</a> *&#160;</td>
+          <td class="paramname"><em>pState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">lua_CFunction&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iUps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1a">eTHLuaMetatable</a>&#160;</td>
           <td class="paramname"><em>eMetatable1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
+          <td class="paramtype">Args...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7009ac865e657079c97452b0fbb7aa29"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void luaT_setclosure </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structTHLuaRegisterState__t.html">THLuaRegisterState_t</a> *&#160;</td>
+          <td class="paramname"><em>pState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">lua_CFunction&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iUps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

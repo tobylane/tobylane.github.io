@@ -57,7 +57,6 @@ var searchData=
   ['mt_5fbitmapfont',['MT_BitmapFont',['../th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1aa83d7342626609c040ad6b8c1feda74f7',1,'th_lua_internal.h']]],
   ['mt_5fcount',['MT_Count',['../th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1aa232e533c1cc30125fc77cb8341809a42',1,'th_lua_internal.h']]],
   ['mt_5fcursor',['MT_Cursor',['../th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1aac347b8051f9aa088d1a8524075d5c2f0',1,'th_lua_internal.h']]],
-  ['mt_5fdummystring',['MT_DummyString',['../th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1aaaebf7ac17f18838fae77243be6b4cdf9',1,'th_lua_internal.h']]],
   ['mt_5ffont',['MT_Font',['../th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1aaaa24caaf9303563d6d1d81e85812c9a7',1,'th_lua_internal.h']]],
   ['mt_5flayers',['MT_Layers',['../th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1aa02c2015cdf841580bfc452be2bd0905d',1,'th_lua_internal.h']]],
   ['mt_5flfsext',['MT_LfsExt',['../th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1aab5755eca89e003681f3747cbd4701abf',1,'th_lua_internal.h']]],

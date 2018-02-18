@@ -128,8 +128,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a1483394729aed67ac4e8b998a2bf2592"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="th__lua_8cpp.html#a1483394729aed67ac4e8b998a2bf2592">luaT_checkfile</a> (lua_State *L, int idx, size_t *pDataLen)</td></tr>
 <tr class="memdesc:a1483394729aed67ac4e8b998a2bf2592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for a string or userdata.  <a href="#a1483394729aed67ac4e8b998a2bf2592">More...</a><br/></td></tr>
 <tr class="separator:a1483394729aed67ac4e8b998a2bf2592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b6708e9705fc98ee11aa8d8d17f0c3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="th__lua_8cpp.html#a1b6708e9705fc98ee11aa8d8d17f0c3f">luaT_setclosure</a> (const <a class="el" href="structTHLuaRegisterState__t.html">THLuaRegisterState_t</a> *pState, lua_CFunction fn, <a class="el" href="th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1a">eTHLuaMetatable</a> eMetatable1,...)</td></tr>
-<tr class="separator:a1b6708e9705fc98ee11aa8d8d17f0c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad477429a8a30410be522af738dcd03fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="th__lua_8cpp.html#ad477429a8a30410be522af738dcd03fd">luaT_setclosure</a> (const <a class="el" href="structTHLuaRegisterState__t.html">THLuaRegisterState_t</a> *pState, lua_CFunction fn, size_t iUps)</td></tr>
+<tr class="separator:ad477429a8a30410be522af738dcd03fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72816e6d529b23e260088949550f64cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="th__lua_8cpp.html#a72816e6d529b23e260088949550f64cd">luaopen_th</a> (lua_State *L)</td></tr>
 <tr class="separator:a72816e6d529b23e260088949550f64cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6464c5aa535f32d25ed03cf1b00b2f57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="th__lua_8cpp.html#a6464c5aa535f32d25ed03cf1b00b2f57">luaT_execute_loadstring</a> (lua_State *L, const char *sLuaString)</td></tr>
@@ -474,7 +474,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1b6708e9705fc98ee11aa8d8d17f0c3f"></a>
+<a class="anchor" id="ad477429a8a30410be522af738dcd03fd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -493,14 +493,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="th__lua__internal_8h.html#adeff670b4ddb98a410a124e22ae53a1a">eTHLuaMetatable</a>&#160;</td>
-          <td class="paramname"><em>eMetatable1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iUps</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
