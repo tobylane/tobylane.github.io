@@ -1,0 +1,7 @@
+return {
+  major = 0,
+  minor = 6,
+  revision = 3,
+  changelog_en = 'Save/Recall your position on the map, set your own hotkeys, and more with the latest version.',
+  download_url = 'http://corsixth.com/downloads.html',
+}
