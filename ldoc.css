@@ -152,10 +152,11 @@ table.index td { text-align: left; vertical-align: top; }
 
 #navigation {
     float: left;
-    width: 14em;
+    width: auto;
     vertical-align: top;
     background-color: #f0f0f0;
     overflow: visible;
+    margin-right: 1em;
 }
 
 #navigation h2 {
@@ -186,9 +187,9 @@ table.index td { text-align: left; vertical-align: top; }
 }
 
 #content {
-    margin-left: 14em;
+    margin-left: auto;
     padding: 1em;
-    width: 700px;
+    width: auto;
     border-left: 2px solid #cccccc;
     border-right: 2px solid #cccccc;
     background-color: #ffffff;
